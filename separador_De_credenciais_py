@@ -1,0 +1,22 @@
+# Lista de credenciais capturadas (precisa de limpeza!)
+dados_brutos = [
+    "  admin : 123456  ",
+    " usuario_root : senha@hack  ",
+    " bento_musica : selah2026 ",
+    "  convidado : convidado123  ",
+    " suporte : suporte_tecnico "
+]
+
+print("--- INICIANDO AUTOMAÇÃO DE LIMPEZA ---")
+
+# O QUE VOCÊ DEVE FAZER:
+# 1. Criar um loop 'for' para percorrer 'dados_brutos'
+# 2. Usar o .split(":") para separar o usuário da senha
+# 3. Usar o .strip() em cada parte para tirar os espaços sobrando
+# 4. Imprimir no formato: "User: [nome] | Pass: [senha]"
+
+for i in dados_brutos:
+    usuario, senha = i.split(":")
+    usuario = usuario.strip(" ")
+    senha = senha.strip(" ")
+    print(f"User: {usuario} / Pass: {senha}")

@@ -1,0 +1,10 @@
+senha_correta = "Mysecurepass"
+limite_tentativas = 3
+tentativa = ""
+while tentativa != senha_correta and limite_tentativas > 0:
+    tentativa = input("Digite a senha: ")
+    if tentativa != senha_correta:
+        print("senha incorreta, você tem mais", limite_tentativas, "tentativas.")
+        limite_tentativas -= 1
+    elif tentativa == senha_correta:
+        print("Acesso liberado.")

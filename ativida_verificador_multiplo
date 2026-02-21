@@ -1,0 +1,11 @@
+def verificar_multiplo():
+    num_principal = int(input("Digite o numero principal:"))
+    num_divisor = int(input("Digite o numero divisor:"))
+    if num_principal % num_divisor == 0: 
+        print(f"{num_principal} é multiplo de {num_divisor}.")
+    else:
+        print(f"{num_principal} não é multiplo de {num_divisor}.")
+verificar_multiplo()
+verificar_multiplo()
+verificar_multiplo()
+verificar_multiplo()
